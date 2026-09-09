@@ -1,7 +1,7 @@
 <script lang="ts">
     const github = "https://github.com/aeternam-13";
     const email = "aeternam13dev@gmail.com";
-    const linkedin = "www.linkedin.com/in/aeternam";
+    const linkedin = "https://www.linkedin.com/in/aeternam";
 
     const stack: string[] = [
         "Flutter",
