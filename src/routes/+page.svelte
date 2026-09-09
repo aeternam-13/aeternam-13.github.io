@@ -1,8 +1,19 @@
 <script lang="ts">
     const github = "https://github.com/aeternam-13";
-    const email = "macg.ae1313@gmail.com";
+    const email = "aeternam13dev@gmail.com";
+    const linkedin = "www.linkedin.com/in/aeternam";
 
-    const stack: string[] = ["flutter", "kotlin", "swift", "go"];
+    const stack: string[] = [
+        "Flutter",
+        "Go",
+        "Kotlin",
+        "Swift",
+        "Svelte",
+        "React",
+        "Python",
+        "C",
+        "Java",
+    ];
 
     type App = {
         name: string;
@@ -13,7 +24,7 @@
 
     const apps: App[] = [
         {
-            name: "mx tax calculator",
+            name: "Salary calculator MX",
             description:
                 "tax estimates for Mexican freelancers and small businesses.",
             href: "/mxtaxcalculator",
@@ -23,29 +34,38 @@
 </script>
 
 <svelte:head>
-    <title>aeternam — Lead Software Developer</title>
+    <title>æternam dev</title>
 </svelte:head>
 
 <main class="page">
     <header class="nav">
-        <span class="mark">ae.</span>
+        <span class="mark">Developer page</span>
         <div class="nav-links">
-            <a class="nav-link" href={github}>github</a>
-            <a class="nav-link" href={`mailto:${email}`}>say hello</a>
+            <span><a class="nav-link" href={github}>Github</a></span>
+            <span> <a class="nav-link" href={linkedin}>Linkedin</a></span>
+            <span>
+                <a class="nav-link" href={`mailto:${email}`}>{email}</a></span
+            >
         </div>
     </header>
 
     <section class="hero">
         <div class="hero-copy">
-            <h1>aeternam</h1>
+            <h1>æternam</h1>
             <p class="role">
-                Lead Software Developer — Flutter, Go, Kotlin, Swift. Android, iOS &amp; Backend.
+                Lead Software Developer — Android, iOS, Web &amp; Backend.
             </p>
             <p class="lede">
-                I've spent the last several years building payment and POS
-                software used by millions of people daily. Now shipping my own
-                apps, starting here — and picking up Go as I move into backend
-                work.
+                I've engineered high-throughput payment architectures for global
+                mobile apps processing over 5 million daily transactions,
+                alongside enterprise POS systems handling over 1 million
+                transactions monthly. <br>My technical scope spans the entire
+                stack—delivering mobile, desktop apps, and games powered by
+                Flutter, alongside scalable web interfaces and high-concurrency
+                backend APIs. 
+                <br>Now, I am combining that end-to-end expertise to
+                ship independent software while taking the lead on backend
+                development in Go.
             </p>
         </div>
 
@@ -56,11 +76,13 @@
                 <span class="dot"></span>
             </div>
             <pre class="terminal-body"><span class="prompt">$</span> whoami
-Marco Antonio Castro Gutiérrez
-aeternam — mobile developer
-
-<span class="prompt">$</span> cat stack.txt
-Flutter · Kotlin · Swift · Go (learning)<span class="cursor">▌</span></pre>
+    Marco Castro 
+    Lead Software Developer @ McDonald's
+<span class="prompt">$</span> cat language_stack.txt
+    {#each stack as tool, i}{tool +
+                        (i === stack.length - 1 ? " " : " · ")}{/each}<span
+                    class="cursor">▌</span
+                ></pre>
         </div>
     </section>
 
@@ -77,9 +99,7 @@ Flutter · Kotlin · Swift · Go (learning)<span class="cursor">▌</span></pre>
     </section>
 
     <footer class="stack">
-        {#each stack as tool, i}
-            <span class="tool" class:first={i === 0}>{tool}</span>
-        {/each}
+        <p>© 2026 aeternam. All rights reserved.</p>
     </footer>
 </main>
 
@@ -117,8 +137,8 @@ Flutter · Kotlin · Swift · Go (learning)<span class="cursor">▌</span></pre>
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding-bottom: 2rem;
-        border-bottom: 1px solid var(--line);
+        padding-bottom: 1rem;
+        border-bottom: 2px solid var(--line);
     }
 
     .mark {
@@ -152,14 +172,14 @@ Flutter · Kotlin · Swift · Go (learning)<span class="cursor">▌</span></pre>
     .hero {
         flex: 1;
         display: grid;
-        grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+        grid-template-columns: minmax(0, 0.4fr) minmax(0, 0.6fr);
         gap: clamp(2rem, 5vw, 5rem);
         align-items: center;
         padding: clamp(3rem, 8vh, 6rem) 0;
     }
 
     .hero-copy {
-        max-width: 40rem;
+        max-width: 42rem;
     }
 
     .hero-copy h1 {
@@ -171,26 +191,22 @@ Flutter · Kotlin · Swift · Go (learning)<span class="cursor">▌</span></pre>
     }
 
     .role {
-        font-size: 1.15rem;
+        font-size: 1.30rem;
         color: var(--ink-soft);
         margin: 0 0 1.5rem;
+        font-weight: bold;
     }
 
     .lede {
         font-size: 1.05rem;
         line-height: 1.65;
         color: var(--ink);
-        max-width: 32ch;
-    }
-
-    .lede em {
-        font-style: italic;
-        color: var(--patina);
+        
     }
 
     .terminal {
         background: var(--terminal-bg);
-        border-radius: 6px;
+        border-radius: 12px;
         overflow: hidden;
         box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
         justify-self: stretch;
@@ -207,7 +223,7 @@ Flutter · Kotlin · Swift · Go (learning)<span class="cursor">▌</span></pre>
         width: 8px;
         height: 8px;
         border-radius: 50%;
-        background: rgba(219, 213, 199, 0.25);
+        background: var(--patina-light);
     }
 
     .terminal-body {
@@ -297,6 +313,7 @@ Flutter · Kotlin · Swift · Go (learning)<span class="cursor">▌</span></pre>
 
     .stack {
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
         gap: 0.9rem;
         padding-top: 1.5rem;
@@ -304,16 +321,6 @@ Flutter · Kotlin · Swift · Go (learning)<span class="cursor">▌</span></pre>
         font-family: "JetBrains Mono", "Courier New", monospace;
         font-size: 0.85rem;
         color: var(--ink-soft);
-    }
-
-    .tool {
-        padding-left: 0.9rem;
-        border-left: 1px solid var(--line);
-    }
-
-    .tool.first {
-        padding-left: 0;
-        border-left: none;
     }
 
     @media (max-width: 760px) {
