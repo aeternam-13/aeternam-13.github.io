@@ -39,12 +39,12 @@
 
 <main class="page">
     <header class="nav">
-        <span class="mark">Developer page</span>
+        <span class="mark">æ</span>
         <div class="nav-links">
             <span><a class="nav-link" href={github}>Github</a></span>
             <span> <a class="nav-link" href={linkedin}>Linkedin</a></span>
             <span>
-                <a class="nav-link" href={`mailto:${email}`}>{email}</a></span
+                <a class="nav-link" href={`mailto:${email}`}>email</a></span
             >
         </div>
     </header>
