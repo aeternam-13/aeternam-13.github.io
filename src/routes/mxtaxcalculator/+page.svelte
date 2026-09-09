@@ -1,4 +1,8 @@
 <script lang="ts">
+    let appName = "Salary calculator";
+    let developerName = "aeternamdev";
+    let contactEmail = "aeternamdev13@gmail.com";
+    let lastUpdated = "September 2026";
 </script>
 
 <svelte:head>
@@ -8,12 +12,59 @@
 <main class="container">
     <a href="/" class="back-link">← back to home</a>
 
-    <h1>mx tax calculator</h1>
+    <h1>{appName}</h1>
     <p class="status">status: coming soon</p>
     <p class="description">
         Tax estimates for Mexican freelancers and small businesses under RESICO
         and Persona Física configurations.
     </p>
+
+    <h1>Privacy Policy for {appName}</h1>
+    <p><strong>Last updated:</strong> {lastUpdated}</p>
+
+    <section>
+        <h2>1. Data Collection and Usage</h2>
+        <p class="description">
+            {appName} does not collect, transmit, store, or share any personal data
+            or user-entered information. All input values and calculations remain
+            strictly in temporary local memory on your device and are discarded when
+            you close the app.
+        </p>
+    </section>
+
+    <section>
+        <h2>2. Permissions</h2>
+        <p class="description">
+            This application requires no device permissions (such as Internet
+            access, location, camera, or storage) to function.
+        </p>
+    </section>
+
+    <section>
+        <h2>3. Third-Party Services and Analytics</h2>
+        <p class="description">
+            This application does not use any third-party SDKs, analytics
+            tracking, advertising networks, or external services.
+        </p>
+    </section>
+
+    <section>
+        <h2>4. Children's Privacy</h2>
+        <p class="description">
+            Because our application does not collect any personal information,
+            it complies with privacy laws including COPPA (Children’s Online
+            Privacy Protection Act) and GDPR.
+        </p>
+    </section>
+
+    <section>
+        <h2>5. Contact Us</h2>
+        <p class="description">
+            If you have any questions or suggestions regarding this Privacy
+            Policy, please contact {developerName} at:
+            <a href="mailto:{contactEmail}">{contactEmail}</a>
+        </p>
+    </section>
 </main>
 
 <style>
@@ -53,7 +104,6 @@
 
     .description {
         font-size: 1.1rem;
-        max-width: 40ch;
         line-height: 1.6;
     }
 </style>

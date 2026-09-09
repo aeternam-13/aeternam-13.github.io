@@ -43,9 +43,7 @@
         <div class="nav-links">
             <span><a class="nav-link" href={github}>Github</a></span>
             <span> <a class="nav-link" href={linkedin}>Linkedin</a></span>
-            <span>
-                <a class="nav-link" href={`mailto:${email}`}>email</a></span
-            >
+            <span> <a class="nav-link" href={`mailto:${email}`}>email</a></span>
         </div>
     </header>
 
@@ -53,18 +51,18 @@
         <div class="hero-copy">
             <h1>æternam</h1>
             <p class="role">
-                Lead Software Developer — Android, iOS, Web &amp; Backend.
+                Senior Software Developer — Android, iOS, Web &amp; Backend.
             </p>
             <p class="lede">
                 I've engineered high-throughput payment architectures for global
                 mobile apps processing over 5 million daily transactions,
                 alongside enterprise POS systems handling over 1 million
-                transactions monthly. <br>My technical scope spans the entire
+                transactions monthly. <br />My technical scope spans the entire
                 stack—delivering mobile, desktop apps, and games powered by
                 Flutter, alongside scalable web interfaces and high-concurrency
-                backend APIs. 
-                <br>Now, I am combining that end-to-end expertise to
-                ship independent software while taking the lead on backend
+                backend APIs.
+                <br />Now, I am combining that end-to-end expertise to ship
+                independent software while taking the lead on backend
                 development in Go.
             </p>
         </div>
@@ -77,7 +75,7 @@
             </div>
             <pre class="terminal-body"><span class="prompt">$</span> whoami
     Marco Castro 
-    Lead Software Developer @ McDonald's
+    Senior Software Developer @ McDonald's
 <span class="prompt">$</span> cat language_stack.txt
     {#each stack as tool, i}{tool +
                         (i === stack.length - 1 ? " " : " · ")}{/each}<span
@@ -85,7 +83,7 @@
                 ></pre>
         </div>
     </section>
-
+    <h2>Released apps</h2>
     <section class="apps">
         {#each apps as app}
             <a class="app-card" href={app.href}>
@@ -191,7 +189,7 @@
     }
 
     .role {
-        font-size: 1.30rem;
+        font-size: 1.3rem;
         color: var(--ink-soft);
         margin: 0 0 1.5rem;
         font-weight: bold;
@@ -201,7 +199,6 @@
         font-size: 1.05rem;
         line-height: 1.65;
         color: var(--ink);
-        
     }
 
     .terminal {
