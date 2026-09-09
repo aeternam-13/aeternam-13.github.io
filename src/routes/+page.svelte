@@ -27,7 +27,7 @@
             name: "Salary calculator MX",
             description:
                 "Salary decision tool for Mexican employees Type your gross salary and benefits, get the real net you'd take home.",
-            href: "/salarycalculator",
+            href: "/salarycalculatormx",
             status: "soon",
         },
     ];

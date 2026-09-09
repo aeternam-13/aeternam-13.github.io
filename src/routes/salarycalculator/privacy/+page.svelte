@@ -10,7 +10,7 @@
 </svelte:head>
 
 <main class="container">
-    <a href="/salarycalculator" class="back-link">← back to Salary calculator</a>
+    <a href="/salarycalculatormx" class="back-link">← back to Salary calculator</a>
 
     <h1>Privacy Policy for {appName}</h1>
     <p class="status"><strong>Last updated:</strong> {lastUpdated}</p>

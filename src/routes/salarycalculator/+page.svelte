@@ -76,7 +76,7 @@
   <p class="description"><strong>Free</strong>, supported by ads.</p>
 
   <footer>
-    <a href="/salarycalculator/privacy" class="nav-link">Privacy Policy</a>
+    <a href="/salarycalculatormx/privacy" class="nav-link">Privacy Policy</a>
   </footer>
 </main>
 
