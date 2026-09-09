@@ -26,8 +26,8 @@
         {
             name: "Salary calculator MX",
             description:
-                "tax estimates for Mexican freelancers and small businesses.",
-            href: "/mxtaxcalculator",
+                "Salary decision tool for Mexican employees Type your gross salary and benefits, get the real net you'd take home.",
+            href: "/salarycalculator",
             status: "soon",
         },
     ];
@@ -273,6 +273,7 @@
         text-decoration: none;
         color: var(--ink);
         min-width: 14rem;
+        max-width: 38rem;
     }
 
     .app-card:hover,
